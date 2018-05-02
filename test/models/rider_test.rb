@@ -6,12 +6,10 @@ class RiderTest < ActiveSupport::TestCase
     # Use your knowledge of factories to make the test pass!
     # this time use create( ... ) instead of build
     aegon = nil
-    aegon = create(:rider, name: 'Aegon', sword:'Blackfyre')
+    aegon = create(:rider, name: 'Aegon', sword:'Blackfyre') #nickname: 'The Conqueror'
 
     daenerys = nil
     daenerys = create(:rider, name: 'Daenerys', sword:'Lightbringer')
-
-    binding.pry
 
     # can't change the assert_ statements!
     skip unless aegon && daenerys

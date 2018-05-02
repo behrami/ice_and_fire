@@ -69,7 +69,7 @@ class DragonTest < ActiveSupport::TestCase
     rider = build(:rider)
 
     dragon = nil
-    dragon = build(:dragon, name:'Balerion', rider: rider)#??????????????????//
+    dragon = build(:dragon, name:'Balerion', rider: rider)
 
     # not allowed to change the assert statement!
     skip unless rider && dragon
